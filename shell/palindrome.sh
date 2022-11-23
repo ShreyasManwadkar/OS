@@ -1,6 +1,7 @@
 #bin/bash/
-read -p "Enter number:" num
-rev = ""
+echo"Enter Number"
+read num
+rev= ""
 temp=$num
 while [$num -gt 0 ]
 do

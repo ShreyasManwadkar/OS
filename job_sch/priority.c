@@ -81,7 +81,7 @@ int main() {
       if (process[j].priority < process[position].priority)
         position = j;
     }
-    // swapping of lower priority process with the higher priority process 
+    // swapping of lower priority process with the higher priority process
     temp_process = process[i];
     process[i] = process[position];
     process[position] = temp_process;
@@ -96,7 +96,7 @@ int main() {
       process[i].waiting_time += process[j].burst_time;
     }
 
-    // calculate total waiting time             
+    // calculate total waiting time
     total += process[i].waiting_time;
   }
 
@@ -107,7 +107,7 @@ int main() {
   total = 0;
 
   printf("\n\nProcess_name \t Burst Time \t Waiting Time \t  Turnaround Time\n");
-  printf("------------------------------------------------------------\n");
+  printf("\n");
 
   for (i = 0; i < number_of_process; i++) {
 
@@ -119,10 +119,10 @@ int main() {
 
     // printing all the values
     printf("\t  %c \t\t  %d \t\t %d \t\t %d", process[i].process_name, process[i].burst_time, process[i].waiting_time, process[i].turn_around_time);
-    printf("\n-----------------------------------------------------------\n");
+    printf("\n\n");
   }
 
-  // calculating the average turn_around time 
+  // calculating the average turn_around time
   average_turnaround_time = (float) total / (float) number_of_process;
 
   // average waiting time

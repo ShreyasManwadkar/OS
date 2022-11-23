@@ -1,5 +1,6 @@
 // CPP Program to multiply two matrix using pthreads
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cstdlib>
 using namespace std;
 
 // maximum size of matrix
@@ -47,7 +48,7 @@ int main()
 		<< "Matrix B" << endl;
 	for (int i = 0; i < MAX; i++) {
 		for (int j = 0; j < MAX; j++)
-			cout << matB[i][j] << " ";	
+			cout << matB[i][j] << " ";
 		cout << endl;
 	}
 
@@ -69,7 +70,7 @@ int main()
 		<< "Multiplication of A and B" << endl;
 	for (int i = 0; i < MAX; i++) {
 		for (int j = 0; j < MAX; j++)
-			cout << matC[i][j] << " ";	
+			cout << matC[i][j] << " ";
 		cout << endl;
 	}
 	return 0;
